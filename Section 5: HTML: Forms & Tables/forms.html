@@ -9,8 +9,13 @@
 </head>
 
 <body>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Google Search</button>
+    </form>
+    <br>
     <form action="/forms">
-        <label for="username">Enter Your Username</label>
+        <label for="Username">Enter Your Username</label>
         <br>
         <input id="Username" type="text" placeholder="Username:">
         <br>
@@ -30,8 +35,8 @@
         <input id="Number" type="number" placeholder="Enter a Number:">
         <br>
         <br>
-        <Label for="Button"> The Buttons are a Lie </Label>
-        <br>
+        <h2> The Buttons are a Lie! </h2>
+
         <button>Submit</button>
         <br>
         <button type="button">Submit</button>
@@ -39,6 +44,12 @@
     <form action="https://www.youtube.com/watch" method="get">
         <input type="hidden" name="v" value="eBGIQ7ZuuiU">
         <button type="submit">Submit</button>
+    </form>
+
+    <form action="/forms">
+        <input type="checkbox" name="Agree_TOS" id="AgreeTOS">
+        <label for="AgreeTOS">I Agree to the Terms and Conditions</label>
+        <button>Submit</button>
     </form>
 </body>
 
