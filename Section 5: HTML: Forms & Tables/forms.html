@@ -9,48 +9,64 @@
 </head>
 
 <body>
-    <form action="https://www.google.com/search">
+    <form action="https://www.imdb.com/find/">
         <input type="text" name="q">
-        <button>Google Search</button>
+        <button>Movie Search</button>
     </form>
     <br>
+    <h2>Create an Account</h2>
     <form action="/forms">
-        <label for="Username">Enter Your Username</label>
+        <label for="Email">Enter Your E-Mail </label>
+        <br>
+        <input id="Email" type="text" placeholder="exammple@domain.com">
+        <br>
+        <br>
+        <label for="Username">Create a Username</label>
         <br>
         <input id="Username" type="text" placeholder="Username:">
         <br>
         <br>
-        <label for="Password">Enter Your Password</label>
+        <label for="Password">Create a Password</label>
         <br>
         <input id="Password" type="password" placeholder="Password:">
         <br>
         <br>
-        <label for="Color">Pick a Color</label>
+        <label for="start">Date of Birth</label>
         <br>
-        <input id="Color" type="color">
+        <input type="date" id="start" name="trip-start" value="2023-01-31" min="1950-01-01" max="2023-12-31">
         <br>
+        <h3>Secuirty Question</h3>
+        <label for="MovieFood">What is your movie theater food of choice? </label>
         <br>
-        <label for="Number">Enter a Number</label>
+        <select name="moviefood" id="MovieFood">
+            <option value="Soda">Soda</option>
+            <option value="Popcorn">Popcorn </option>
+            <option value="Candy">Candy</option>
+            <option value="Nachos">Nachos</option>
+        </select>
         <br>
-        <input id="Number" type="number" placeholder="Enter a Number:">
-        <br>
-        <br>
-        <h2> The Buttons are a Lie! </h2>
 
-        <button>Submit</button>
-        <br>
-        <button type="button">Submit</button>
+        <h3> Submit Your Account </h3>
     </form>
+    <input type="checkbox" name="Agree_TOS" id="AgreeTOS">
+    <label for="AgreeTOS">I Agree to the Terms and Conditions</label>
+    <br>
+    <br>
     <form action="https://www.youtube.com/watch" method="get">
         <input type="hidden" name="v" value="eBGIQ7ZuuiU">
         <button type="submit">Submit</button>
     </form>
+    <form action="forms">
+        <label for="movierating">Rate this Film</label>
+        <input type="range" id="movierating" min="0.00" max="10" step="0.01" name="movie_rating">
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Serial_Experiments_Lain_DVD_vol_1.jpg" alt="Movie Poster">
+        <br>
+        <textarea name="MovieReview" id="moviereview" cols="30" rows="10" placeholder="Leave a review:"></textarea>
+        <button>Rate</button>
 
-    <form action="/forms">
-        <input type="checkbox" name="Agree_TOS" id="AgreeTOS">
-        <label for="AgreeTOS">I Agree to the Terms and Conditions</label>
-        <button>Submit</button>
     </form>
 </body>
+
 
 </html>
