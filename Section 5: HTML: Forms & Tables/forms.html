@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Movie Form</Form>
+    </title>
 </head>
 
 <body>
+    <h1>ALL NIGHT MOVIES </h1>
     <form action="https://www.imdb.com/find/">
         <input type="text" name="q">
         <button>Movie Search</button>
@@ -45,7 +47,6 @@
             <option value="Nachos">Nachos</option>
         </select>
         <br>
-
         <h3> Submit Your Account </h3>
     </form>
     <input type="checkbox" name="Agree_TOS" id="AgreeTOS">
@@ -57,16 +58,16 @@
         <button type="submit">Submit</button>
     </form>
     <form action="forms">
-        <label for="movierating">Rate this Film</label>
-        <input type="range" id="movierating" min="0.00" max="10" step="0.01" name="movie_rating">
-        <br>
+        <h3>Review this Film</h3>
         <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Serial_Experiments_Lain_DVD_vol_1.jpg" alt="Movie Poster">
         <br>
-        <textarea name="MovieReview" id="moviereview" cols="30" rows="10" placeholder="Leave a review:"></textarea>
-        <button>Rate</button>
-
+        <label for="movierating">Rating</label>
+        <br>
+        <input type="range" id="movierating" min="0.00" max="10" step="0.01" name="movie_rating">
+        <br>
+        <textarea name="MovieReview" id="moviereview" cols="30" rows="10" placeholder="Write a review:"></textarea>
+        <button>Review</button>
     </form>
 </body>
-
 
 </html>
