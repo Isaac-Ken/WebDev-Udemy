@@ -1,0 +1,71 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #22223b;
+
+}
+
+h1,
+h2,
+h3 {
+    color: #616a6b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+#MovieSearch {
+    text-align: center;
+}
+
+#ms {
+    background-color: #4a4e69;
+}
+
+#Email,
+#Username,
+#Password,
+#DOB,
+#MovieFood,
+button {
+    background-color: #abb2b9;
+
+
+}
+
+textarea {
+    background-color: #abb2b9
+}
+
+label {
+    font-weight: bold;
+}
+
+#ca {
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+#rr {
+    position: absolute;
+    top: 30.18em;
+    left: 3.5em;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+#rv {
+    position: absolute;
+    top: 32em;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
