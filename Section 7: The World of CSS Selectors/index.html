@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Night Movies Form</Form>
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ALL NIGHT MOVIES </h1>
+    <form id="MovieSearch" action="https://www.imdb.com/find/">
+        <input type="text" name="q">
+        <button id="ms">Movie Search</button>
+    </form>
+    <form id="ca" action="/forms">
+        <h2>Create an Account</h2>
+        <label for="Email">Enter Your E-Mail </label>
+        <br>
+        <input id="Email" type="text" placeholder="example@domain.com" required>
+        <br>
+        <br>
+        <label for="Username">Create a Username</label>
+        <br>
+        <input id="Username" type="text" placeholder="Username:" minlength="5" maxlength="15" required>
+        <br>
+        <br>
+        <label for="Password">Create a Password</label>
+        <br>
+        <input id="Password" type="password" placeholder="Password:" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,20}$"
+            title="Minimum of 8 characters. Should have at least one special character and one number and one UpperCase Letter." required>
+        <br>
+        <br>
+        <label for="DOB">Date of Birth</label>
+        <br>
+        <input type="date" id="DOB" name="trip-start" value="2023-01-31" min="1950-01-01" max="2023-12-31" required>
+        <br>
+        <h3>Secuirty Question</h3>
+        <label for="MovieFood">What is your movie theater food of choice? </label>
+        <br>
+        <select name="moviefood" id="MovieFood" required>
+            <option value="">--Choose One--</option>
+            <option value="Soda">Soda</option>
+            <option value="Popcorn">Popcorn </option>
+            <option value="Candy">Candy</option>
+            <option value="Nachos">Nachos</option>
+        </select>
+        <br>
+        <h3> Submit Your Account </h3>
+        <input type="checkbox" name="Agree_TOS" id="AgreeTOS" required>
+        <label for="AgreeTOS">I Agree to the Terms and Conditions</label>
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+    <input type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;">
+    <br>
+    <form id="rr" action="https://www.youtube.com/watch" method="get">
+        <input type="hidden" name="v" value="eBGIQ7ZuuiU">
+        <button type="submit">Submit</button>
+    </form>
+    <form id="rv" action="forms">
+        <h3>Review this Film</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3c/Hokuto_no_Ken_%281986_movie_pamphlet%29.jpg" alt="Movie Poster">
+        <br>
+        <label for="movierating">Rating</label>
+        <br>
+        <input type="range" id="movierating" min="0.00" max="10" step="0.01" name="movie_rating">
+        <br>
+        <textarea name="MovieReview" id="moviereview" cols="30" rows="10" placeholder="Write a review:"></textarea>
+        <button>Review</button>
+    </form>
+</body>
+
+
+</html>
