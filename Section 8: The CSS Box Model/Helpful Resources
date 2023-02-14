@@ -1,1 +1,3 @@
+Em =parent element 
+Rem =root element 
 always use rem for font-size and em for the proportionate padding if you need to.
