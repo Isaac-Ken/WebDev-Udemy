@@ -1,0 +1,48 @@
+h1 {
+    background-color: #8F8389;
+    border: 5px solid black;
+    color: black;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px auto;
+    font-family: 'Courier New';
+    font-weight: lighter;
+}
+
+h1:nth-of-type(2n) {
+    background-color: #E6EFE9;
+}
+
+h1:nth-of-type(3n) {
+    background-color: #CDD3D5;
+}
+
+h1:nth-of-type(4n) {
+    background-color: #C5F4E0;
+}
+
+section:first-of-type h1:nth-of-type(1) {
+    transform: rotate(180deg);
+
+}
+
+section:first-of-type h1:nth-of-type(2) {
+    transform: scale(0.6)
+}
+
+section:first-of-type h1:nth-of-type(3) {
+    transform: translateX(200px)
+}
+
+section:nth-of-type(2) h1:nth-of-type(1) {
+    transform: skew(30deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(2) {
+    transform: scale(1.5)
+}
+
+section:nth-of-type(2) h1:nth-of-type(3) {
+    transform: translateX(-500px) translateY(-1.5px) rotate(45deg);
