@@ -15,20 +15,33 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
     flex-wrap: wrap;
 }
 
 #container div {
     width: 200px;
     height: 200px;
+    max-width: 300px;
     text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
 }
 
-div:nth-of-type(3) {
-    align-self: center;
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
 }
 
-div:nth-of-type(2) {
-    align-self: flex-end;
+main .sidebar {
+    background-color: #6930c3;
+    border: 2px solid white;
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 1 800px;
 }
